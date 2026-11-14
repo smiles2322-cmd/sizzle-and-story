@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sizzle &amp; Story</title>
+<meta name="description" content="Sizzle & Story: a cozy anime cooking adventure. Cook the story. Make the meal.">
+<meta name="theme-color" content="#f4a259">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar" id="topbar" hidden>
+  <span class="brand">Sizzle &amp; Story</span>
+  <span class="coins" id="coinBadge" aria-live="polite"><span aria-hidden="true">🪙</span> <span id="coinCount">0</span><span class="sr"> coins</span></span>
+</header>
+<main id="main" tabindex="-1"></main>
+<nav class="tabbar" id="tabbar" aria-label="Main" hidden>
+  <button data-go="cafe"><span aria-hidden="true">☕</span><span>Café</span></button>
+  <button data-go="journal"><span aria-hidden="true">📖</span><span>Journal</span></button>
+  <button data-go="recipes"><span aria-hidden="true">🍳</span><span>Recipes</span></button>
+  <button data-go="shop"><span aria-hidden="true">🛍️</span><span>Decorate</span></button>
+  <button data-go="settings"><span aria-hidden="true">⚙️</span><span>Settings</span></button>
+</nav>
+<div id="live" class="sr" aria-live="polite" aria-atomic="true"></div>
+<div id="toast" class="toast" role="status" hidden></div>
+<script src="recipes.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
